@@ -1,0 +1,18 @@
+.Three-Dee {
+	font-family: Garamond, serif;
+	line-height: 1em;
+	color: #f0d3f0;
+	font-weight: bold;
+	font-size: 45px;
+	text-shadow: 0px 0px 0 rgb(225, 196, 225), 1px 1px 0 rgb(210, 181, 210),
+		2px 2px 0 rgb(195, 166, 195), 3px 3px 0 rgb(180, 151, 180), 4px 4px 0
+		rgb(165, 136, 165), 5px 5px 0 rgb(150, 121, 150), 6px 6px 0
+		rgb(135, 106, 135), 7px 7px 0 rgb(120, 91, 120), 8px 8px 0
+		rgb(105, 76, 105), 9px 9px 8px rgba(0, 0, 0, 0.45), 9px 9px 1px
+		rgba(0, 0, 0, 0.5), 0px 0px 8px rgba(0, 0, 0, .2);
+}
+.datepicker{
+	width: 180px;
+	font-size: 14px;
+	padding: 5px;
+}

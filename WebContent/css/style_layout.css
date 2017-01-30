@@ -1,0 +1,129 @@
+@CHARSET "UTF-8";
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #FFFFFF url(../images/bg01.png) repeat;
+}
+#wrapper {
+	min-height: 700px;
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+#wrapper_table2 {
+	height: auto;
+	background-color: #F3F3E7;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+}
+.form_title {
+	margin: 0 auto;
+	width: 522px;
+	height: 50px;
+	line-height: 50px;
+	
+	
+	background-color: #7d5d3b;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+.form {
+	margin: 0 auto;
+	width: 500px;
+	background: #F8F8F8;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #54381e;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.label {
+	width: 250px;
+	font-size: 17px;
+	color: #003553 !important
+}
+
+.form_text {
+	width: 280px;
+	padding: 6px;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	background-image: none;
+	font-size: 15px;
+}
+
+.form_select {
+	width: 294px;
+	padding: 6px;
+	border-radius: 3px;
+	border: 1px solid #CCC;
+	background-image: none;
+	font-size: 15px;
+}
+
+.intro {
+	font-size: 17px;
+	color: #003553 !important;
+	margin-top: 10px;
+}
+
+.multibox {
+	width: 15px;
+	height: 15px;
+}
+.msg_err {
+	color: red;
+}
+.multibox{
+	width: 20px;
+	height: 20px;
+}
+.msg_success{
+	color: green;
+}
+.btn_schedule {
+	-moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+	background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
+	background-color:#637aad;
+	border:1px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Times New Roman;
+	font-size:17px;
+	font-weight:bold;
+	padding:5px 10px 5px;
+	text-decoration:none;
+	width: 100px;
+	text-align: center;
+	height: 25px;
+}
+.btn_schedule:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+	background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-ms-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+	background-color:#5972a7;
+}
+.btn_schedule:active {
+	position:relative;
+	top:1px;
+}

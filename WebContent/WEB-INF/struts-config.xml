@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts 
+Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="checkLoginForm" type="form.CheckLoginForm" />
+		<form-bean name="studentForm" type="form.StudentForm" />
+
+		<form-bean name="option1Form" type="form.Option1Form" />
+		<form-bean name="option2Form" type="form.Option2Form" />
+		<form-bean name="option3Form" type="form.Option3Form" />
+		<form-bean name="option4Form" type="form.Option4Form" />
+
+
+	</form-beans>
+
+
+	<action-mappings>
+		<action path="/Login" type="org.apache.struts.actions.ForwardAction"
+			parameter="/login.jsp">
+		</action>
+		<!-- Kiem tra dang nhap -->
+		<action name="checkLoginForm" attribute="checkLoginForm" path="/CheckLogin"
+			type="action.CheckLoginAction">
+			<forward name="success" path="/ShowListStudent.do" />
+			<forward name="failure" path="/Login.do" />
+		</action>
+
+		<!-- danh sach sinh vien -->
+		<action name="studentForm" path="/ShowListStudent" type="action.ShowListStudentAction">
+			<forward name="success" path="/listStudent.jsp" />
+			<forward name="failure" path="/Login.do" />
+		</action>
+
+		<!-- them sinh vien -->
+		<action name="studentForm" attribute="studentForm" path="/AddStudent"
+			type="action.AddStudentAction">
+			<forward name="success" path="/ShowListStudent.do" />
+			<forward name="failure" path="/ShowListStudent.do" />
+		</action>
+
+		<!-- xoa sinh vien -->
+		<action name="studentForm" attribute="studentForm" path="/DeleteStudent"
+			type="action.DeleteStudentAction">
+			<forward name="success" path="/ShowListStudent.do" />
+			<forward name="failure" path="/ShowListStudent.do" />
+		</action>
+
+		<!-- hien thi trang update sinh vien -->
+		<action name="studentForm" attribute="studentForm" path="/ShowUpdateStudent"
+			type="action.ShowUpdateStudentAction">
+			<forward name="success" path="/updateStudent.jsp" />
+			<forward name="failure" path="/ShowListStudent.do" />
+		</action>
+
+		<!-- update sinh vien -->
+		<action name="studentForm" attribute="studentForm" path="/UpdateStudent"
+			type="action.UpdateStudentAction">
+			<forward name="success" path="/ShowListStudent.do" />
+			<forward name="failure" path="/ShowListStudent.do" />
+		</action>
+
+		<!-- logout -->
+		<action name="" attribute="" path="/Logout" type="action.LogoutAction">
+			<forward name="success" path="/Login.do" />
+		</action>
+
+		<!-- Show Insert 1 -->
+		<action name="" attribute="" path="/ShowInsert_1" type="action.ShowInsert_1Action">
+			<forward name="success" path="/success.jsp" />
+			<forward name="failure" path="/error.jsp" />
+		</action>
+
+		<!-- Insert 1 -->
+		<action name="" attribute="" path="/Insert_1" type="action.Insert_1Action">
+			<forward name="success" path="/success.jsp" />
+			<forward name="failure" path="/error.jsp" />
+		</action>
+
+	
+		<!-- Show Insert 2 -->
+		<action name="" attribute="" path="/ShowInsert_2" type="action.ShowInsert_2Action">
+			<forward name="success" path="/success.jsp" />
+			<forward name="failure" path="/error.jsp" />
+		</action>
+
+		<!-- Insert 2 -->
+		<action name="" attribute="" path="/Insert_2" type="action.Insert_2Action">
+			<forward name="success" path="/success.jsp" />
+			<forward name="failure" path="/error.jsp" />
+		</action>
+		
+		
+		<!-- Show Insert 3 -->
+		<action name="" attribute="" path="/ShowInsert_3" type="action.ShowInsert_3Action">
+			<forward name="success" path="/success.jsp" />
+			<forward name="failure" path="/error.jsp" />
+		</action>
+
+		<!-- Insert 3 -->
+		<action name="" attribute="" path="/Insert_3" type="action.Insert_3Action">
+			<forward name="success" path="/success.jsp" />
+			<forward name="failure" path="/error.jsp" />
+		</action>
+
+
+
+	</action-mappings>
+
+	<message-resources parameter="common.ApplicationResources" />
+
+</struts-config>
