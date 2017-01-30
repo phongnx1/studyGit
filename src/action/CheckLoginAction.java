@@ -25,8 +25,7 @@ public class CheckLoginAction extends Action{
 		CheckLoginForm checkLoginForm = (CheckLoginForm) form;
 		String userName = checkLoginForm.getUserName();
 		String passWord = checkLoginForm.getPassword();
-		
-		// Check for login
+		System.out.println("userName:"+userName);
 		CheckLoginBO checkLoginBO = new CheckLoginBO();
 		if (checkLoginBO.checkLogin(userName, passWord)!=0)
 			return mapping.findForward("success");
