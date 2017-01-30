@@ -36,6 +36,7 @@ public class AddStudentAction extends Action {
 		System.out.println("lop: "+stud.getClass_name());
 		System.out.println("so thich: "+stud.getHobbies());
 		
+		// def
 		boolean isInsert=false;
 		isInsert=studentBO.insertStudent(stud);
 		if(isInsert==true){
