@@ -18,7 +18,7 @@ import org.apache.struts.action.ActionMessages;
 import form.CheckLoginForm;
 
 
-public class CheckLoginAction extends Action{
+public abstract class CheckLoginAction extends Action{
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response) {
 		
